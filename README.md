@@ -452,6 +452,6 @@ If you find this project useful, please consider:
 ---
  
 **Last Updated:** May 2026  
-**Maintainer:** [Md. Shahid Wadud](https://github.com/saadw50)  
+**Maintainer:** [Shad Ebny Wahid](https://github.com/saadw50)  
 **Repository:** [ultrasound_phased_array_for_2d_acoustic_imaging](https://github.com/saadw50/ultrasound_phased_array_for_2d_acustic_imaging)
  
