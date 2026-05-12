@@ -7,7 +7,7 @@
  
 > A servo-free 2D acoustic imaging system using beamforming with an 8-transmitter, 1-receiver ultrasonic phased array. No moving parts—just pure electronic beam steering at the microsecond level.
  
-![Project Banner](3D_image.jpg)
+![Project Banner](3D_image.png)
  
 ---
  
