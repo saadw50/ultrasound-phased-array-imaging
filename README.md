@@ -1,143 +1,52 @@
-# Ultrasound Phased Array for 2D Acoustic Imaging
+## 🛠️ Hardware Assembly & Testing Guide (V1.0)
 
-![Project Banner](3D_image.jpg) 
+This guide covers the assembly and initial bring-up of the V1.0 Phased Array PCB. The board uses a split "Loud/Quiet" layout to isolate the high-current 12V TX array from the highly sensitive analog RX envelope detector.
 
-
-## 🚀 Overview
-This project implements a servo-free 2D acoustic imaging system using an ultrasonic phased array. By controlling the phase delay of signals sent to multiple transducers, we can "steer" the acoustic beam electronically (Beamforming) without moving parts.
-
-## 🛠️ Hardware Architecture
-* **Transducers:** [Number]x ultrasonic transducers (40kHz).
-* **Microcontroller:** [Arduino/ESP32?] 
-* **Driver Circuit:** Custom PCB for TX/RX switching.
-
-### Circuit Design
-| Transmitter (TX) | Receiver (RX) |
-| :---: | :---: |
-| ![TX](hardware/tx_design.png) | ![RX](hardware/rx_design.png) |
-
-## 💻 Software & Theory
-### Beamforming Logic
-The phase shift $\Delta \phi$ required to steer the beam by angle $\theta$ is calculated as:
-$$\Delta \phi = \frac{2 \pi d \sin(\theta)}{\lambda}$$
-Where:
-* $d$ = distance between transducers
-* $\lambda$ = wavelength of the sound wave
-
-### Files
-* `firmware/ultrasonic_shape_rudder.ino`: C++ code for the microcontroller to handle pulse timing.
-* `src/shape_plotter.py`: Python script to visualize the received echo data in 2D.
-
-## ⚙️ How to Run
-1.  **Hardware:** Assemble the PCB as shown in `hardware/schematic.pdf`.
-2.  **Firmware:** Upload the `.ino` code to your microcontroller.
-3.  **Visualization:** Install dependencies and run the plotter:
-    ```bash
-    pip install -r requirements.txt
-    python src/shape_plotter.py
-    ```
-
-<h1 align="center">Hi 👋, I'm Shad Ebny Wahid</h1>
-<h3 align="center">A BSc Student in Electrical and Electronic Engineering at Jamalpur Science and Technology University, Bangladesh</h3>
-
-<p align="left"> <a href="https://twitter.com/saadw50" target="blank"><img src="https://img.shields.io/twitter/follow/saadw50?logo=twitter&style=for-the-badge" alt="saadw50" /></a> </p>
-
-- 🔭 I’m currently working on [🛰️ Utrasound phased array for 2D acoustic imaging using beamforming (Servo-Free)](https://github.com/saadw50/ultrasound_phased_array_for_2d_acustic_imaging/tree/main)
-- 🌱 I’m currently learning **Android Studio, COMSOL, Google API,Ubuntu, Beamforming, Quantum Espresso, DFT, Python, Overleaf**
-- 🤝 I’m looking for help with [Ultrasonic Shape Detection Rudder (Without Servo)](https://github.com/saadw50/ultrasonic_rudder/tree/main)
-- 👨‍💻 All of my projects are available at [www.facebook.com/saadw50](www.facebook.com/saadw50)
-- 📫 How to reach me **shadebnywahid@gmail.com**, **s23111212@bsfmstu.ac.bd**
-- 📄 Know about my experiences [here](https://drive.google.com/file/d/1q19jDYHpGHEHJq8MfL7ZnVBcALHE4oKg/view?usp=sharing)
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/saadw50" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="saadw50" height="30" width="40" /></a>
-<a href="https://fb.com/saadw50" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="saadw50" height="30" width="40" /></a>
-<a href="https://instagram.com/pagal__tissue_le_lo" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="pagal__tissue_le_lo" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/eee_bd_by_saad" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="eee_bd_by_saad" height="30" width="40" /></a>
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left">
-<a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a>
-<a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a>
-<a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a>
-<a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a>
-<a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a>
-<a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a>
-<a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a>
-<a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
-<a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a>
-<a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a>
-<a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a>
-<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-<a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a>
-</p>
-
-<h3 align="left">Support:</h3>
-<p><a href="https://ko-fi.com/saadw50"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="saadw50" /></a></p><br><br>
-
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=saadw50&show_icons=true&locale=en&layout=compact" alt="saadw50" /></p>
----
-
-### **Contributing**
-I welcome contributions to enhance this ultrasound phased array project! Whether it's improving the beamforming algorithm, optimizing the circuit design, or adding new features, your input is valuable. Here's how you can contribute:
-
-- **Fork the Repository**: Create your own copy of this project.
-- **Create a Branch**: Use a descriptive name (e.g., `feature/add-receiver-circuit`).
-- **Make Changes**: Implement your improvements or fixes.
-- **Submit a Pull Request**: Describe your changes, and I’ll review them.
-- **Code Standards**: Follow C/C++ conventions and comment your code.
-- **Issues**: Report bugs or suggest features via the [Issues tab](https://github.com/saadw50/ultrasound_phased_array_for_2d_acustic_imaging/issues).
-
-### **License**
-This project is licensed under the MIT License. Feel free to use, modify, and distribute the code, provided you include the original copyright and license notice. See the [LICENSE](LICENSE) file for details.
-
-### **Acknowledgments**
-- **Inspiration**: Thanks to open-source communities and academic resources for guiding this project.
-- **Support**: Gratitude to my professors and peers at Jamalpur Science and Technology University for their guidance.
-- **Tools**: Special thanks to xAI's Grok for assisting with circuit design and troubleshooting (as of 07:24 PM +06, August 25, 2025).
-- **Hardware**: Acknowledgment to Nilkhet electronics market for affordable components like IRF540N and LM358N.
-
-### **Project Details**
-- **Objective**: Develop a servo-free 2D acoustic imaging system using an 8-transmitter, 1-receiver ultrasonic phased array, controlled by NodeMCU (ESP32), for applications like object detection or imaging.
-- **Hardware**:
-  - Microcontroller: NodeMCU (ESP32)
-  - Transmitters: 8 x 40 kHz piezoelectric transducers
-  - Receiver: 1 x 40 kHz transducer with LM358N amplification
-  - Driver: IRF540N MOSFETs with 10 kΩ resistors and 1N4007 diodes
-  - Power: 20 V DC for transmitters, 5 V for NodeMCU
-  - Capacitors: 100 nF (50 V) for receiver filtering
-- **Software**:
-  - Language: C/C++ (Arduino IDE)
-  - Features: Beamforming with 64 phase shifts, 400 µs pulses, 20 kHz ADC sampling
-  - Repository: [https://github.com/saadw50/ultrasound_phased_array_for_2d_acustic_imaging](https://github.com/saadw50/ultrasound_phased_array_for_2d_acustic_imaging)
-- **Status**: Under development; transmitter circuit tested, receiver in progress (updated as of 07:24 PM +06, August 25, 2025).
-
-### **Future Work**
-- Implement full 8-transmitter array with optimized phase delays.
-- Enhance receiver circuit with 1N4148 diodes for better signal clamping.
-- Integrate with Android Studio for real-time imaging using Google API.
-- Explore COMSOL for simulation of acoustic wave propagation.
-
-### **Contact for Collaboration**
-For collaboration or questions, reach out via:
-- Email: **shadebnywahid@gmail.com** or **s23111212@bsfmstu.ac.bd**
-- Social Media: [Twitter](https://twitter.com/saadw50), [Facebook](https://fb.com/saadw50)
+### 📦 Bill of Materials (BOM)
+* **Microcontroller:** ESP32 (NodeMCU or similar)
+* **ADC:** 1x MCP3008 (10-bit SPI)
+* **Op-Amp:** 1x TL072 (Dual JFET LNA)
+* **MOSFETs:** 8x IRLZ44N (Logic-Level)
+* **Diodes:** 9x 1N5819 Schottky Diodes (8 for TX flybacks, 1 for RX envelope)
+* **Transducers:** 8x TCT40-16T (Transmit), 1x TCT40-16R (Receive)
+* **Passives:** 
+  * 100nF Ceramic Decoupling Capacitors (for IC power pins)
+  * 100Ω Gate Resistors, 10kΩ Pull-downs
+  * RC Filter: 47Ω Resistor + 100µF Electrolytic Capacitor
+* **Hardware:** DIP IC Sockets (8-pin & 16-pin), 2.54mm Headers, Foam tape.
 
 ---
 
-## 📦 Folder Structure
+### 🔧 Phase 1: PCB Soldering
+To ensure the board lays flat while working, solder components in order of height (lowest to highest):
 
-```bash
-├── Arduino_Code/
-│   └── ultrasonic_array_shape.ino
-├── Python_Visualizer/
-│   └── shape_plotter.py
-├── docs/
-│   ├── schematic_diagram.png
-│   └── wiring_diagram.pdf
-├── images/
-│   ├── demo_output_plot.png
-│   └── hardware_setup_photo.jpg
-└── README.md
+1. **Passives & Diodes:** Solder all 100Ω and 10kΩ resistors. Solder the nine 1N5819 Schottky diodes, ensuring the cathode (silver stripe) matches the PCB silkscreen.
+2. **IC Sockets:** **Do not solder the TL072 or MCP3008 directly to the board.** Solder the DIP sockets first to protect the silicon from heat damage.
+3. **Capacitors:** Solder the 100nF ceramic decoupling capacitors close to the IC pads, followed by the larger 100µF electrolytic filter capacitor (note the ground stripe polarity).
+4. **Power Drivers & Headers:** Solder the IRLZ44N MOSFETs, screw terminals, and ESP32 connection headers.
+5. **Transducers:** Solder the 8 TX transducers perfectly flush with the PCB for accurate beamforming math. 
+   > ⚠️ **Critical Mechanical Step:** Do NOT solder the RX transducer flush to the board. Mount it on a small square of thick double-sided foam tape before soldering. This physically isolates the microphone from the fiberglass, preventing acoustic "ringdown" from the TX array and dropping the blind zone to near-zero.
+
+---
+
+### ⚡ Phase 2: The "Smoke Test" (No ICs Installed)
+Before inserting the TL072 or MCP3008 into their sockets, verify the power rails:
+1. Connect the 12V power supply to the screw terminals.
+2. Probe **Pin 8** of the empty TL072 socket; it should read exactly 12V.
+3. Probe the virtual ground junction (between BIAS4 and BIAS5); it should read exactly 6V.
+4. If voltages are stable and nothing is heating up, disconnect power and safely insert the TL072 and MCP3008 into their sockets.
+
+---
+
+### 🔌 Phase 3: Star Ground Wiring Topology
+Because this system switches high inductive currents (TX) next to sensitive analog signals (RX), grounding is critical to prevent frying the ESP32.
+
+1. **TX Array:** Connect the "Dirty" 12V supply to the TX side.
+2. **RX Board:** Connect the ESP32 `3V3` to power the ADC logic.
+3. **The Star Ground:** Run one ground wire from the TX array header to the ESP32 `GND`. Run a *separate* ground wire from the RX header to the *exact same* ESP32 `GND` pin. Never daisy-chain the grounds.
+
+---
+
+### 📡 Phase 4: Initial Bring-Up
+1. **TX Verification:** Connect the 8 ESP32 GPIOs to the TX array. Upload the basic sweep code. You should feel a slight acoustic pressure/breeze in front of the array, confirming the 40kHz square waves are firing.
+2. **RX Verification:** Connect the 4 SPI lines (`CS`, `CLK`, `MOSI`, `MISO`) to the ESP32. Snap your fingers near the isolated RX transducer while monitoring the Serial Plotter. You should see sharp, clean voltage spikes on the MCP3008 output.
