@@ -447,7 +447,9 @@ This project is released under the [MIT License](LICENSE).
 ---
 
 ## 📬 Contact
-
+<p align="center">
+  <img src="./github_profile_ascii.svg" width="700" alt="ASCII portrait">
+</p>
 **Maintainer:** [Shad Ebny Wahid](https://github.com/saadw50)  
 **Project:** Ultrasound Phased Array for 2D Acoustic Imaging  
 **Institution:** Jamalpur Science and Technology University, Bangladesh
