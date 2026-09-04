@@ -108,4 +108,4 @@ Maintainer: [Shad Ebny Wahid](https://github.com/saadw50)
 
 Jamalpur Science and Technology University, Bangladesh
 
-Corresponding paper email: `shadebnywahid@bsfmstu.ac.bd`
+Corresponding paper email: `s23111212@bsfmstu.ac.bd`
