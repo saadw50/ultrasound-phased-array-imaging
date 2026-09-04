@@ -64,6 +64,7 @@ struct LogRow;
 
 const char* WIFI_SSID = "YOUR_WIFI_SSID";
 const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
+const char* FALLBACK_AP_PASSWORD = "CHANGE_ME_AP_PASSWORD";
 
 WebServer server(80);
 Preferences preferences;
@@ -960,7 +961,7 @@ static void startWiFi() {
   } else {
     Serial.println("WiFi failed; starting fallback AP");
     WiFi.mode(WIFI_AP);
-    WiFi.softAP("Ultrasonic-Beam", "12345678");
+    WiFi.softAP("Ultrasonic-Beam", FALLBACK_AP_PASSWORD);
     Serial.print("Fallback IP: ");
     Serial.println(WiFi.softAPIP());
   }

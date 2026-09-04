@@ -1,0 +1,27 @@
+# Local and generated files
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+
+# Raw captures and local result exports
+raw_reflector_results/
+processed_acoustic_images/
+*.raw
+*.bin
+*.dat
+
+# Local PDF render scratch files
+_page*.png
+_check_pdf.py
+_render_pdf.py

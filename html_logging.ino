@@ -9,8 +9,10 @@
 // WIFI
 // ============================================================
 
-const char* WIFI_SSID = "Mastar Bari";
-const char* WIFI_PASSWORD = "13477471";
+// Set these locally before flashing. Never commit real credentials.
+const char* WIFI_SSID = "YOUR_WIFI_SSID";
+const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
+const char* FALLBACK_AP_PASSWORD = "CHANGE_ME_AP_PASSWORD";
 
 WebServer server(80);
 Preferences preferences;
@@ -1941,7 +1943,7 @@ void startWiFi() {
 
     WiFi.softAP(
       "Ultrasonic-Cal",
-      "12345678"
+      FALLBACK_AP_PASSWORD
     );
 
     Serial.print(
