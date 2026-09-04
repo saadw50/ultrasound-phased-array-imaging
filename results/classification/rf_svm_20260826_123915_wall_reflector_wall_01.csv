@@ -1,0 +1,3 @@
+repeat_index,angle_deg,rf_prediction,rf_confidence,svm_prediction,svm_confidence,combined_prediction
+1.0,4.0,glass,0.31441071360198025,wall,0.36807556727382473,wall
+2.0,4.0,plastic,0.31542257818459196,wall,0.3663625198885594,wall

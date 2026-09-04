@@ -10,7 +10,7 @@ The current hardware and firmware support sequential multi-transmitter ranging a
 
 A controlled raw-waveform audit used four 50.0-cm sessions recorded on 2026-08-29 for wood, wall, plastic, and glass. The sessions contain 2170 captures over 31 electronic angles from -15 to +15 degrees, with 10--20 repeats per angle. Offline processing found 24.7--38.4 dB mean audited echo SNR and a repeatable uncorrected range bias of +12.68 +/- 0.54 cm. The true 50.0-cm distance was confirmed independently; the bias is consistent with the recorded 24-cycle burst and beam/channel delay budget.
 
-This result demonstrates a useful calibration baseline. It is not a claim of absolute range accuracy, full-waveform 2-D reconstruction, or generalization to unseen objects/materials.
+This result demonstrates a useful calibration baseline. It is not a claim of absolute range accuracy, full-waveform 2-D reconstruction, or generalization to unseen objects/materials. Selected distance, imaging, timing, and classification result files are available under [`results/`](results/).
 
 ## Repository contents
 
@@ -19,7 +19,7 @@ This result demonstrates a useful calibration baseline. It is not a claim of abs
 - `shape_plotter.py`: legacy serial plotting utility; update its port and input format before use.
 - `hardware/`: TX/RX circuit images and PCB-related assets.
 - `data/`: supporting project images and waveform-related assets.
-- `paper/`: final manuscript, figures, evidence audit, and submission checklist.
+- `results/`: selected distance, 2D imaging, timing, and classification exports with provenance and limitations.
 - `requirements.md`: current hardware/software requirements.
 
 ## Hardware architecture
