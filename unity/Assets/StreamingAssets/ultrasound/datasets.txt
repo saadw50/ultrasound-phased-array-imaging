@@ -1,0 +1,4 @@
+# Baked datasets loaded by the Unity console, one file name per line.
+# Regenerate with unity/Tools/bake_scan.py.
+reflector_50cm.uscan
+reflector_84_5cm.uscan

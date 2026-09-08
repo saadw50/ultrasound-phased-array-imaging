@@ -17,6 +17,8 @@ This result demonstrates a useful calibration baseline. It is not a claim of abs
 - `html_logging.ino`: ESP32 Wi-Fi calibration dashboard and sequential scanner.
 - `ultrasonic_shape_rudder.ino`: alternative ESP32 firmware with placeholder network credentials.
 - `shape_plotter.py`: legacy serial plotting utility; update its port and input format before use.
+- `unity/`: Unity console that draws the transmit beam, replays the recorded
+  angle/range sessions as a sector image, and reads the ESP32 dashboard.
 - `hardware/`: TX/RX circuit images and PCB-related assets.
 - `data/`: supporting project images and waveform-related assets.
 - `results/`: selected distance, 2D imaging, timing, and classification exports with provenance and limitations.
@@ -80,6 +82,33 @@ Never commit real Wi-Fi credentials. Both firmware examples now contain placehol
 | MISO | 19 |
 | MOSI | 23 |
 | VDD/VREF | 3.3 V |
+
+## Unity phased-array console
+
+[`unity/`](unity/) contains a Unity front end for this platform. It is a
+visualisation and forward-modelling tool, not an additional measurement claim.
+
+It draws four instrument panels: the 2-D acoustic field in front of the
+aperture, the transmit beam pattern in decibels, a B-mode sector image, and the
+per-channel delay schedule. It runs from recorded data, from a forward model, or
+from a live ESP32 dashboard link, and it needs no scenes, prefabs, materials or
+shaders — one component builds everything it draws.
+
+The beamforming defaults are ported from `ultrasonic_shape_rudder.ino`, so the
+simulated beam matches the delays the firmware actually emits, and the range
+axis reproduces the exported CSV values exactly.
+
+The console makes the array's known limitations measurable rather than
+decorative. With a 17 mm pitch at 40 kHz the element spacing is 1.96
+wavelengths, so grating lobes sit at ±30.7° at broadside; steering to +15° moves
+one of them to **-14.5°, inside the ±15° sector the recorded sessions sweep**. A
+reflector at +20°, outside the sweep entirely, produces its strongest response
+near -10°. It also shows that the Rayleigh distance is 40.8 cm, so the audited
+50.0 cm target is only just in the far field, and that the 240 MHz delay grid
+contributes 0.03° of carrier phase error, which is not what limits the array.
+
+See [`unity/README.md`](unity/README.md) for setup, the data pipeline and the
+full list of limitations.
 
 ## Processing and research roadmap
 

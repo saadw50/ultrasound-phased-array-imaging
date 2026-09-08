@@ -25,3 +25,18 @@ processed_acoustic_images/
 _page*.png
 _check_pdf.py
 _render_pdf.py
+
+# Unity generated folders (unity/ can be opened directly as a project)
+unity/Library/
+unity/Temp/
+unity/Obj/
+unity/Build/
+unity/Builds/
+unity/Logs/
+unity/UserSettings/
+unity/MemoryCaptures/
+unity/Recordings/
+unity/[Aa]ssets/**/*.meta
+unity/*.csproj
+unity/*.sln
+unity/*.userprefs
