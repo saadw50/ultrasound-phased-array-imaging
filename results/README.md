@@ -39,6 +39,12 @@ not validated full-waveform inverse reconstructions or quantitative object
 detection results. Grating lobes, bistatic geometry, multipath, and timing
 bias remain active limitations.
 
+The [cropped 2D visualization gallery](imaging/visualizations/README.md) adds
+three historical USB2D envelope-sector plot panels and one separate theoretical
+steering-response map. The PNGs are exact rectangular crops, with the original
+plot pixels and axes preserved. Captions and a manifest retain the settings,
+source hashes, crop coordinates, and unresolved range discrepancies.
+
 ## Timing and oscilloscope measurements
 
 `timing/` contains exported oscilloscope CSV files used to inspect TX/RX and

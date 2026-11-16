@@ -12,6 +12,16 @@ A controlled raw-waveform audit used four 50.0-cm sessions recorded on 2026-08-2
 
 This result demonstrates a useful calibration baseline. It is not a claim of absolute range accuracy, full-waveform 2-D reconstruction, or generalization to unseen objects/materials. Selected distance, imaging, timing, and classification result files are available under [`results/`](results/).
 
+## 2D visualization gallery
+
+[Open the full image gallery](results/imaging/visualizations/README.md) for three cropped envelope-sector views and a separate theoretical steering-response map.
+
+| Near-range envelope sector | Far-response envelope sector | Multiple response bands |
+|---|---|---|
+| [![Uncalibrated near-range envelope sector](results/imaging/visualizations/near_range_envelope_sector_uncalibrated_2026-08-20.png)](results/imaging/visualizations/near_range_envelope_sector_uncalibrated_2026-08-20.png) | [![Uncalibrated far-response envelope sector](results/imaging/visualizations/far_response_envelope_sector_uncalibrated_2026-08-20.png)](results/imaging/visualizations/far_response_envelope_sector_uncalibrated_2026-08-20.png) | [![Uncalibrated envelope sector with multiple response bands](results/imaging/visualizations/multiple_response_envelope_sector_uncalibrated_2026-08-20.png)](results/imaging/visualizations/multiple_response_envelope_sector_uncalibrated_2026-08-20.png) |
+
+These historical USB2D views document normalized envelope responses. They are uncalibrated visualizations: the displayed peaks differ from the operator-entered distances, and the response bands are not independently identified physical objects. The gallery preserves the settings and discrepancies in its captions and [crop manifest](results/imaging/visualizations/manifest.json).
+
 ## Repository contents
 
 - `html_logging.ino`: ESP32 Wi-Fi calibration dashboard and sequential scanner.

@@ -1,0 +1,175 @@
+{
+  "reviewed_on": "2026-11-16",
+  "repository_path": "results/imaging/visualizations",
+  "purpose": "Historical software visualization and theoretical simulation; not validated sensing benchmarks",
+  "originals_retained_locally": true,
+  "cropping": "plot panels only, with axes, titles and color scales retained",
+  "files": [
+    {
+      "file": "near_range_envelope_sector_uncalibrated_2026-08-20.png",
+      "source_screenshot": "usb2d_gui_uncalibrated_near_range_2026-08-20.png",
+      "source_sha256": "ee922c22ecbc09edf398c52c09b24ba03d3d45fac2f09b8e04f591a029814399",
+      "sha256": "885c946cb4d48054dbae74b5d9c3dce65afeb906d98b89533a83a8872f767ec4",
+      "git_blob_sha1": "23aaee7f13a2addde3d5db50bcc6d5d402aab6e6",
+      "source_dimensions": {
+        "width": 1622,
+        "height": 913
+      },
+      "crop_box_pixels": {
+        "width": 960,
+        "top": 118,
+        "left": 540,
+        "height": 721
+      },
+      "operation": "Exact rectangular crop; no resizing, filtering, recoloring, or data redraw",
+      "pixel_equality_verified": true,
+      "classification": "historical_envelope_visualization",
+      "screenshot_date_is_measurement_date": false,
+      "visible_source_metadata": {
+        "firmware_label": "USB2D-2.0.0",
+        "operator_entered_distance_cm": 75.0,
+        "displayed_peak_cm": 88.9,
+        "displayed_peak_commanded_angle_deg": -9.0,
+        "physical_ground_truth_verified": false,
+        "calibrated_accuracy_verified": false,
+        "sweep_start_deg": -15,
+        "sweep_end_deg": 15,
+        "angular_step_deg": 1,
+        "repeats_per_angle_per_mode": 1,
+        "burst_cycles": 8,
+        "rx_blanking_us": 500,
+        "rx_window_us": 30000,
+        "range_bin_us": 50,
+        "sound_speed_cm_per_us": 0.034675,
+        "tof_offset_us": 0,
+        "threshold_margin_adc": 10,
+        "adc_mode": "SINGLE",
+        "diversity_modes": [
+          "FULL8",
+          "LEFT4",
+          "RIGHT4"
+        ]
+      }
+    },
+    {
+      "file": "far_response_envelope_sector_uncalibrated_2026-08-20.png",
+      "source_screenshot": "usb2d_gui_uncalibrated_far_response_2026-08-20.png",
+      "source_sha256": "7875094464fda93ed769ecc6a6a936b66d83093aef33baae70bc9da45d5726dc",
+      "sha256": "ce1f6cd1516d34237a30692d3d7b4d8bf038ba7cd9b5d187c039ffd4def1cb5e",
+      "git_blob_sha1": "5280d75ef8d6fd4e949fd27c4e92cb5176ea122d",
+      "source_dimensions": {
+        "width": 1662,
+        "height": 917
+      },
+      "crop_box_pixels": {
+        "width": 960,
+        "top": 118,
+        "left": 540,
+        "height": 721
+      },
+      "operation": "Exact rectangular crop; no resizing, filtering, recoloring, or data redraw",
+      "pixel_equality_verified": true,
+      "classification": "historical_envelope_visualization",
+      "screenshot_date_is_measurement_date": false,
+      "visible_source_metadata": {
+        "firmware_label": "USB2D-2.0.0",
+        "operator_entered_distance_cm": 500.0,
+        "displayed_peak_cm": 466.8,
+        "displayed_peak_commanded_angle_deg": 0.0,
+        "physical_ground_truth_verified": false,
+        "calibrated_accuracy_verified": false,
+        "sweep_start_deg": -15,
+        "sweep_end_deg": 15,
+        "angular_step_deg": 1,
+        "repeats_per_angle_per_mode": 2,
+        "burst_cycles": 8,
+        "rx_blanking_us": 500,
+        "rx_window_us": 30000,
+        "range_bin_us": 50,
+        "sound_speed_cm_per_us": 0.034675,
+        "tof_offset_us": 0,
+        "threshold_margin_adc": 5,
+        "adc_mode": "SINGLE",
+        "diversity_modes": [
+          "FULL8",
+          "LEFT4",
+          "RIGHT4"
+        ]
+      }
+    },
+    {
+      "file": "multiple_response_envelope_sector_uncalibrated_2026-08-20.png",
+      "source_screenshot": "usb2d_gui_uncalibrated_multiple_responses_2026-08-20.png",
+      "source_sha256": "d6e2c7d61a014d875338b6da0591ab828e705b7e2a0cd1d112454546c414e85f",
+      "sha256": "9fbabb8386fbf35c86f91093ff23a87bca2e4bc5f2eb20d36e43da8a38990b1b",
+      "git_blob_sha1": "651589abe58bafb6ef773232de566a8a77c91441",
+      "source_dimensions": {
+        "width": 1518,
+        "height": 919
+      },
+      "crop_box_pixels": {
+        "width": 960,
+        "top": 118,
+        "left": 540,
+        "height": 721
+      },
+      "operation": "Exact rectangular crop; no resizing, filtering, recoloring, or data redraw",
+      "pixel_equality_verified": true,
+      "classification": "historical_envelope_visualization",
+      "screenshot_date_is_measurement_date": false,
+      "visible_source_metadata": {
+        "firmware_label": "USB2D-2.0.0",
+        "operator_entered_distance_cm": 500.0,
+        "displayed_peak_cm": 222.4,
+        "displayed_peak_commanded_angle_deg": 9.0,
+        "physical_ground_truth_verified": false,
+        "calibrated_accuracy_verified": false,
+        "sweep_start_deg": -15,
+        "sweep_end_deg": 15,
+        "angular_step_deg": 1,
+        "repeats_per_angle_per_mode": 1,
+        "burst_cycles": 8,
+        "rx_blanking_us": 500,
+        "rx_window_us": 25000,
+        "range_bin_us": 50,
+        "sound_speed_cm_per_us": 0.034675,
+        "tof_offset_us": 0,
+        "threshold_margin_adc": 10,
+        "adc_mode": "SINGLE",
+        "diversity_modes": [
+          "FULL8",
+          "LEFT4",
+          "RIGHT4"
+        ]
+      }
+    },
+    {
+      "file": "simulated_steering_response_map_2026-08-10.png",
+      "source_screenshot": "simulation_8tx_array_factor_and_grating_lobes_2026-08-10.png",
+      "source_sha256": "82d237340428dffdb1a10b226f3ca9ae46cc6ce048d1f8809ba56eed1546cea6",
+      "sha256": "7ea37b3cd552f02262e81d703a5263fc57ed02e2155503c847b4fcc51e609432",
+      "git_blob_sha1": "1c5ef8e383e28a22b2aa362cf00c5f90932d8b25",
+      "source_dimensions": {
+        "width": 2560,
+        "height": 1528
+      },
+      "crop_box_pixels": {
+        "width": 810,
+        "top": 145,
+        "left": 1750,
+        "height": 625
+      },
+      "operation": "Exact rectangular crop; no resizing, filtering, recoloring, or data redraw",
+      "pixel_equality_verified": true,
+      "classification": "theoretical_array_factor_simulation",
+      "screenshot_date_is_measurement_date": false,
+      "model_parameters": {
+        "transmitters": 8,
+        "pitch_mm": 17,
+        "type": "Ideal normalized array factor; not a measured acoustic map",
+        "sound_speed_m_per_s": 346.75,
+        "carrier_hz": 40000
+      }
+    }
+  ]
+}
